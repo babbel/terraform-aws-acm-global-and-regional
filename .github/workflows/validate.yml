@@ -1,0 +1,17 @@
+name: Validate
+
+on: push
+
+env:
+  AWS_REGION: local
+
+jobs:
+  validate:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - uses: hashicorp/setup-terraform@v1.3.2
+        with:
+          terraform_version: 0.15.5
+      - run: terraform init
+      - run: terraform validate
