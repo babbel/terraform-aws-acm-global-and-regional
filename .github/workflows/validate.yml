@@ -12,7 +12,7 @@ jobs:
       run:
         working-directory: _test
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3
       - uses: hashicorp/setup-terraform@v1.3.2
         with:
           terraform_version: 0.15.5
