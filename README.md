@@ -13,7 +13,7 @@ As this module is supposed to create resources in two different regions, it need
 ```tf
 module "acm" {
   source  = "babbel/acm-global-and-regional/aws"
-  version = "~> 1.0"
+  version = "~> 2.0"
 
   providers = {
     aws.global   = ...
