@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.0.0
+## v1.1.0
 
 - [Bump hashicorp/aws dependency](https://github.com/babbel/terraform-aws-acm-global-and-regional/pull/3)
 
