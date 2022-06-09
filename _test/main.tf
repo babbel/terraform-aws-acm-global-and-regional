@@ -1,9 +1,11 @@
 provider "aws" {
-  alias = "global"
+  alias  = "global"
+  region = "local"
 }
 
 provider "aws" {
-  alias = "regional"
+  alias  = "regional"
+  region = "local"
 }
 
 module "acm" {
