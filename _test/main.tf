@@ -9,7 +9,7 @@ provider "aws" {
 }
 
 module "acm" {
-  source  = "./.."
+  source = "./.."
 
   providers = {
     aws.global   = aws.global
@@ -24,7 +24,7 @@ module "acm" {
   }
 
   tags = {
-    app  = "some-service"
-    env  = "production"
+    app = "some-service"
+    env = "production"
   }
 }
