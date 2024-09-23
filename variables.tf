@@ -1,3 +1,12 @@
+variable "default_tags" {
+  type    = map(string)
+  default = {}
+
+  description = <<EOS
+Map of tags assigned to all AWS resources created by this module.
+EOS
+}
+
 variable "domain_names_to_zone_ids" {
   type = map(string)
 
@@ -11,14 +20,5 @@ variable "primary_domain_name" {
 
   description = <<EOS
 A domain name for which the certificate should be issued.
-EOS
-}
-
-variable "tags" {
-  type    = map(string)
-  default = {}
-
-  description = <<EOS
-Map of tags assigned to all AWS resources created by this module.
 EOS
 }

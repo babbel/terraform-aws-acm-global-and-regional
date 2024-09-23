@@ -5,7 +5,7 @@ resource "aws_acm_certificate" "global" {
   subject_alternative_names = setsubtract(keys(var.domain_names_to_zone_ids), [var.primary_domain_name])
   validation_method         = "DNS"
 
-  tags = var.tags
+  tags = var.default_tags
 
   lifecycle {
     create_before_destroy = true
@@ -19,7 +19,7 @@ resource "aws_acm_certificate" "regional" {
   subject_alternative_names = setsubtract(keys(var.domain_names_to_zone_ids), [var.primary_domain_name])
   validation_method         = "DNS"
 
-  tags = var.tags
+  tags = var.default_tags
 
   lifecycle {
     create_before_destroy = true
