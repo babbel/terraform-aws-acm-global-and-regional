@@ -26,10 +26,5 @@ module "acm" {
     "example.com"     = "XYZXYZXYZXYZXYZ"
     "www.example.com" = "YZXYZXYZXYZXYZX"
   }
-
-  tags = {
-    app  = "some-service"
-    env  = "production"
-  }
 }
 ```
