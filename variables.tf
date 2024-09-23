@@ -20,7 +20,7 @@ variable "global_acm_certificate_tags" {
   default = {}
 
   description = <<EOS
-Map of tags assigned to the global ACM certificate.
+Map of tags assigned to the global ACM certificate created by this module. Tags in this map will override tags in `var.default_tags`.
 EOS
 }
 
@@ -37,6 +37,6 @@ variable "regional_acm_certificate_tags" {
   default = {}
 
   description = <<EOS
-Map of tags assigned to the regional ACM certificate.
+Map of tags assigned to the regional ACM certificate created by this module. Tags in this map will override tags in `var.default_tags`.
 EOS
 }
